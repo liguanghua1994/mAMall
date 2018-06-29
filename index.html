@@ -120,7 +120,7 @@
                 </a>
             </li>
             <li class="i-nav-item">
-                <a href="" class="i-nav-link">
+                <a href="page/cart.html" class="i-nav-link">
                     <i class="i-nav-icon icon-font icon-font">&#xe93a;</i>
                     <div class="i-nav-text">购物车</div>
                 </a>
@@ -376,10 +376,26 @@
     <aside id="global-gotop" class="global-gotop global-round">
         <i class="icon-font">&#xea3a;</i>
     </aside>
+    <div id="i-search-page" class="i-search-page">
+        <section class="i-search-page-header">
+            <section class="i-spage-header-search global-border-box">
+                <label for="i-spage-input" class="i-spage-searchicon icon-font">&#xe986;</label>
+                <form action="page/searchlist.html">
+                    <input id="i-spage-input" type="text" class="i-spage-input global-border-box" placeholder="商品/店铺" name="wd">
+                </form>
+            </section>
+            <section class="i-spage-header-cancel">
+                <span id="i-spage-cancel" class="i-spage-cancel">取消</span>
+            </section>
+        </section>
+        <section class="i-search-page-history"></section>
+        <section class="i-search-page-think"></section>
+    </div>
 
     <script src="js/pictureSwitch.js"></script>
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
     <script>
         var clientWidth=window.innerWidth;
         pictureSwitching(1,clientWidth,100,3000);

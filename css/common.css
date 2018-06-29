@@ -23,6 +23,11 @@ th,td{
 p{
     line-height: 1.5rem;
 }
+input{
+    -webkit-appearance: none;/*禁用iPhone safari浏览器按钮特殊样式*/
+    background-color: #f7f7f7;
+}
+
 /*解决浮动元素父容器塌陷问题 begin*/
 .clearfix{*zoom:1}/*IE6和IE7*/
 .clearfix:after{content:"";display:block;clear:both;}/*IE8+和主流浏览器*/

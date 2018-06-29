@@ -90,32 +90,29 @@ span.pd-number-cut,.pd-number-add {
 }
 
 span.pd-number-cut {
-    color: #ccc;
-    border: 1px solid #ccc;
     margin-top: .2rem;
-    margin-left: .2rem;
+    font-size: 1.5rem;
 }
 
 span.pd-number-add {
-    color: #333;
-    border: 1px solid #ccc;
     margin-top: .2rem;
+    font-size: 1.5rem;
 }
 
 input.pd-number-input {
     border:0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     outline: none;
     font-size: 1rem;
     line-height: 1.5rem;
     width: 5rem;
     text-align: center;
     margin-top: .2rem;
+    background-color: #fff;
 }
 
 section.pd-number * {
-    float: left;
+    float: right;
 }
 .pd-address{
     width: 90%;
@@ -138,11 +135,9 @@ section.pd-number * {
     color: #999;
 }
 .pd-time{
-    font-size:.5rem;
     color: #999;
 }
 .pd-remain{
-    font-size:.6rem;
     color: #e4393c;
     padding-right:.5rem;
 }
@@ -187,7 +182,6 @@ section.pd-number * {
     top: 3rem;
     left:0;
     background-color: #fff;
-    padding: 0 5px;
     display: none;
 }
 .pd-nav-active .pd-nav-detail{
@@ -252,7 +246,7 @@ ul.pd-service-list {
 }
 .pd-comment-time{
     font-weight:normal;
-    font-size:.6rem;
+    font-size: .9rem;
     color: #999;
 }
 .pd-comment-text{
@@ -293,4 +287,44 @@ td.pd-params-item-header {
 }
 .pd-service-active{
     color: #e4393c;
+}
+.pd-purchase{
+    width:100%;
+    height:3rem;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background-color: #fff;
+}
+.pd-chat,.pd-collect,.pd-cart{
+    width:16%;
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    font-size:2rem;
+    color: #666;
+    float: left;
+    border-top: 1px solid #ccc;
+}
+.pd-addcart,.pd-buy{
+    width:26%;
+    height:3rem;
+    float: left;
+}
+.pd-addcart-btn,.pd-buy-btn{
+    display: inline-block;
+    width:100%;
+    height:3rem;
+    text-align: center;
+    line-height:3rem;
+    color: #ffffff;
+}
+.pd-addcart-btn{
+    background-color: #ff9600;
+}
+.pd-buy-btn{
+    background-color: #e4393c;
+}
+section.pd-number.pd-param.clearfix {
+    width: 8rem;
 }
