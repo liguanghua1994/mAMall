@@ -23,8 +23,8 @@ th,td{
 p{
     line-height: 1.5rem;
 }
-input{
-    -webkit-appearance: none;/*禁用iPhone safari浏览器按钮特殊样式*/
+input[type="button"],input[type="submit"],input[type="reset"]{
+    -webkit-appearance: none;/*禁用iPhone safari浏览器按钮特殊样式,会把radio的大小设置为0*/
     background-color: #f7f7f7;
 }
 
@@ -56,6 +56,22 @@ input{
     bottom:4rem;
     display: none;
 }
+
+/* 全局radio样式 begin */
+.global-radio{
+    height:3rem;
+    line-height: 3rem !important;
+    margin:0 .5rem;
+    color: #999;
+    float: right;
+}
+.global-radio-active{
+    color: red;
+}
+.global-radio-hidden{
+    display: none;
+}
+/* 全局radio样式 end */
 
 html{
     font-size: 12px;

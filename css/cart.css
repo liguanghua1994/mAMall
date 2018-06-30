@@ -152,6 +152,7 @@ i.cart-pdetail-num-increase.icon-font {
 .cart-footer-price-total{
     color: #f23030;
     font-weight:bold;
+    font-size: 1.5rem;
 }
 .cart-footer-purchase-btn{
     display: inline-block;
@@ -164,6 +165,7 @@ i.cart-pdetail-num-increase.icon-font {
 }
 section.cart-footer-price-box {
     flex: 2;
+    border-top: 1px solid #ccc;
 }
 .cart-footer-zoom{
     height:3rem;

@@ -28,4 +28,19 @@ $(document).ready(function(){
     $("#global-back").click(function(){
         history.back();
     });
+
+    //全局切换radio
+    $(".global-radio").click(function(){
+        var $radioName=$(this).next().attr("name");
+        var $radios=$("input[name='"+$radioName+"']");
+        $radios.removeAttr("checked");
+        $(this).next().attr("checked","true");
+
+        $radios.each(function(){
+            $(this).prev().removeClass("global-radio-active");
+            $(this).parent().css("background-color","#fff");
+        });
+        $(this).addClass("global-radio-active");
+        $(this).parent().css("background-color","#f7f7f7");
+    });
 });
