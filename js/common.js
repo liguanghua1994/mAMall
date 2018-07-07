@@ -43,4 +43,9 @@ $(document).ready(function(){
         $(this).addClass("global-radio-active");
         $(this).parent().css("background-color","#f7f7f7");
     });
+
+    //全局头部菜单
+    $("#global-header-menu").click(function(){
+        $("#global-header-aside").slideToggle(100);
+    });
 });

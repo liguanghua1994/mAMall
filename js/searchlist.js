@@ -59,4 +59,8 @@ $(document).ready(function(){
             $(this).addClass("sl-filter-options-active");
         }
     });
+
+    $("#sl-header-right").click(function(){
+        $("#global-header-aside").slideToggle(100);
+    });
 });
